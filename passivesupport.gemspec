@@ -4,7 +4,7 @@ require "passivesupport/version"
 
 Gem::Specification.new do |s|
   s.name        = "passivesupport"
-  s.version     = "0.0.1"
+  s.version     = Passivesupport::VERSION
   s.authors     = ["Caleb Thompson"]
   s.email       = ["caleb@solsystemscompany.com"]
   s.homepage    = ""
