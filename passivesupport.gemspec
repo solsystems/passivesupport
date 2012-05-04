@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
                   DESC
   s.rubyforge_project = "passivesupport"
 
-  s.files         = Dir["lib/**/*"]
+  s.files         = Dir["README.md", "lib/**/*"]
   s.require_path  = "lib"
 
   s.add_runtime_depenency "activesupport"
