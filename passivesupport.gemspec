@@ -15,7 +15,10 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "passivesupport"
 
   s.files         = Dir["README.md", "lib/**/*"]
+  s.test_files    = Dir['spec/spec_helper.rb', 'spec/**/*_spec.rb']
   s.require_path  = "lib"
 
   s.add_runtime_dependency "activesupport"
+
+  s.add_development_dependency "rspec"
 end
