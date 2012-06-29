@@ -1,12 +1,13 @@
+require 'active_support/core_ext/enumerable'
 class Hash
   # Get the leaf nodes in a Hash as an Array.
   #
   # Examples:
   #
   #   {
-  #     "beverages" => { "caffinated" => ["coffee", "tea"] }
+  #     "beverages" => { "caffinated" => ["coffee", "tea"] },
   #     "vehicles" => ["car", "truck", "airplane"],
-  #     "dessert" => "ice cream"
+  #     "dessert" => "ice cream",
   #   }.leaves
   #   # => ["coffee", "tea", "car", "truck", "airplane", "ice cream"]
   #
