@@ -1,4 +1,5 @@
 require 'active_support/core_ext/string/inflections'
+require 'active_support/inflections'
 
 class String
   # Singularize or Pluralize a string, as appropriate, and prefixes with `count`.
@@ -15,6 +16,6 @@ class String
   # Returns the singular or plural form of the string based on `count`, with
   # `count` as the prefix.
   def numberize(count)
-    "#{ number } " + (number == 1) ? self.singularize : self.pluralize
+    "#{ count } " << ((count == 1) ? self.singularize : self.pluralize)
   end
 end
